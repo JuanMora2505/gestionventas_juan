@@ -1,0 +1,54 @@
+REPORTE DE VENTAS
+==================
+
+2024-01-01 al 2024-12-31
+
+ID    VENDEDOR                          TOTAL VENTAS
+-------------------------------------------------------
+1     Sofia Rodriguez                    287.228.000
+2     Mateo Gonzalez                      84.473.000
+3     Isabella Perez                     245.470.000
+4     Vendedor repetido Ya Existe        198.712.000
+6     Alejandro Torres                   258.330.000
+7     Gabriela Diaz                      257.060.000
+9     Daniela Jimenez                    269.387.000
+10    Nicolas Castro                     269.601.072
+12    David Morales                        1.026.000
+13    Laura Rojas                        266.855.000
+14    Santiago Gutierrez                 298.806.000
+15    Camila Ruiz                        256.569.000
+16    Diego Alvarez                      274.892.000
+17    Valeria Herrera                    112.094.449
+18    Juan Navarro                       265.134.000
+21    Paula Aguilar                      287.301.000
+22    Martin Santos                      173.479.000
+23    Lucia Flores                       254.250.000
+25    Elena Suarez                       261.222.000
+26    Pedro Castillo                     239.736.778
+27    Patricia Silva                     259.052.000
+28    Carlos Benavides                   259.204.000
+29    Monica Vega                        253.999.000
+30    Roberto Cardenas                   283.514.000
+31    Liliana Pinto                      293.954.000
+32    Eduardo Salazar                    261.717.217
+33    Adriana Vega                       266.084.000
+34    Ricardo Cordoba                    208.821.000
+35    Veronica Guerrero                  259.816.000
+36    Javier Mendoza                     251.050.000
+37    Carolina Valencia                  270.758.000
+38    Oscar Rios                         245.550.000
+39    Sandra Delgado                     208.191.000
+40    Fernando Chavez                    297.112.000
+41    Rosa Villalba                      283.078.000
+42    Raul Ochoa                         290.800.742
+43    Teresa Serrano                     241.701.000
+44    Mario Fuentes                      253.498.000
+45    Luisa Miranda                       50.728.000
+46    Luis Marin                         245.754.000
+47    Sofia Ibarra                        40.836.000
+48    Jorge Padilla                      264.637.000
+49    Carmen Herrera                     240.210.000
+50    Manuel Castaneda                   259.627.000
+-------------------------------------------------------
+
+                       TOTAL GENERAL:  10.351.318.258
