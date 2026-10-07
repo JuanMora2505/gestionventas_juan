@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunicado a los Colaboradores – Convenio de Libranza Davivienda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700;800&family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rojo: #b3121b;
+    --rojo-oscuro: #8f0d14;
+    --rojo-claro: #e4a3a6;
+    --gris-oscuro: #2f2f33;
+    --gris: #6d6d70;
+    --borde-gris: #b9b9bc;
+    --texto: #2b2b2b;
+    --fondo: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #ececec;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    color: var(--texto);
+    line-height: 1.45;
+    padding: 24px 16px;
+  }
+  .hoja {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--fondo);
+    padding: 40px 36px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+
+  /* Encabezado */
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .titulo h1 {
+    font-family: "League Spartan", Arial, sans-serif;
+    font-weight: 800;
+    color: var(--rojo);
+    font-size: clamp(28px, 5.4vw, 44px);
+    line-height: 1;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--rojo-claro);
+  }
+  .cinta {
+    display: inline-block;
+    margin-top: 14px;
+    background: var(--rojo);
+    color: #fff;
+    font-family: "League Spartan", Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2.6vw, 22px);
+    padding: 8px 48px 6px 16px;
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
+  }
+  .logo {
+    flex-shrink: 0;
+    text-align: left;
+    min-width: 200px;
+  }
+  /* Espacio para el logo: reemplaza este bloque por <img src="logo.png" alt="Summar Productividad"> */
+  .logo .marca {
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--gris-oscuro);
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .logo .sub {
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 20px;
+    color: var(--gris);
+    letter-spacing: 3px;
+  }
+
+  .intro {
+    margin: 30px 6px 28px;
+    font-size: 17px;
+  }
+
+  /* Tarjetas */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .tarjeta {
+    border: 1.5px solid var(--rojo-claro);
+    border-radius: 10px;
+    padding: 0 22px 20px;
+    position: relative;
+  }
+  .tarjeta.gris { border-color: var(--borde-gris); }
+  .tarjeta-cab {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 -22px 0;
+  }
+  .icono {
+    width: 74px;
+    height: 84px;
+    flex-shrink: 0;
+    background: var(--rojo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-top-left-radius: 9px;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+  }
+  .tarjeta.gris .icono { background: var(--gris-oscuro); }
+  .icono svg { width: 40px; height: 40px; }
+  .tarjeta h2 {
+    font-family: "League Spartan", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.15;
+    color: var(--rojo);
+    text-transform: uppercase;
+    padding-top: 14px;
+  }
+  .tarjeta.gris h2 { color: var(--gris-oscuro); }
+  .separador {
+    border: none;
+    border-top: 1.5px solid var(--rojo-claro);
+    margin: 12px 0 16px 92px;
+  }
+  .tarjeta.gris .separador { border-top-color: var(--borde-gris); }
+
+  .checks { list-style: none; }
+  .checks li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .checks li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    width: 9px;
+    height: 16px;
+    border-right: 3px solid var(--rojo);
+    border-bottom: 3px solid var(--rojo);
+    transform: rotate(40deg);
+  }
+  .checks .gris-texto { color: var(--gris); }
+
+  .tarjeta p { font-size: 15.5px; margin-bottom: 14px; }
+  .tarjeta p:last-child { margin-bottom: 0; }
+
+  .puntos { padding-left: 22px; margin-bottom: 14px; font-size: 15.5px; }
+  .puntos li { margin-bottom: 4px; }
+  .nota {
+    border-top: 1.5px solid var(--rojo-claro);
+    padding-top: 10px;
+  }
+
+  .contacto-firma {
+    border-top: 1.5px solid var(--borde-gris);
+    margin-top: 14px;
+    padding-top: 12px;
+    font-size: 15.5px;
+  }
+  .contacto-firma strong { font-size: 17px; display: block; }
+
+  /* Banner inferior */
+  .banner {
+    margin-top: 24px;
+    background: linear-gradient(90deg, var(--rojo-oscuro), var(--rojo));
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 18px 26px;
+    color: #fff;
+  }
+  .banner .burbuja {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .burbuja svg { width: 40px; height: 40px; }
+  .banner .linea {
+    width: 2px;
+    align-self: stretch;
+    background: rgba(255,255,255,.6);
+  }
+  .banner p {
+    font-family: "League Spartan", Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(17px, 2.6vw, 22px);
+    line-height: 1.2;
+  }
+
+  .cierre {
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1.5px solid var(--rojo-claro);
+    font-size: 17px;
+  }
+
+  @media (max-width: 680px) {
+    .hoja { padding: 24px 16px; }
+    .encabezado { flex-direction: column-reverse; }
+    .grid { grid-template-columns: 1fr; }
+    .banner { flex-direction: column; text-align: center; }
+    .banner .linea { display: none; }
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .hoja { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="hoja">
+
+    <header class="encabezado">
+      <div class="titulo">
+        <h1>Comunicado a los<br>colaboradores</h1>
+        <div class="cinta">Convenio de Libranza Davivienda</div>
+      </div>
+      <div class="logo">
+        <!-- Reemplaza este bloque por la imagen del logo oficial si la tienes -->
+        <div class="marca">SUMMAR</div>
+        <div class="sub">PRODUCTIVIDAD</div>
+      </div>
+    </header>
+
+    <p class="intro">
+      Estimados Colaboradores,<br>
+      En alianza entre el Banco Davivienda y Summar Temporales S.A.S., queremos informarles que cuentan con acceso a los beneficios exclusivos del Convenio de Libranza Davivienda, diseñado para ofrecer soluciones financieras ágiles, seguras y ajustadas a sus necesidades.
+    </p>
+
+    <div class="grid">
+
+      <!-- Beneficios -->
+      <section class="tarjeta">
+        <div class="tarjeta-cab">
+          <div class="icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l7.5 3v6c0 4.6-3.2 8.6-7.5 10-4.3-1.4-7.5-5.4-7.5-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+          </div>
+          <h2>Beneficios del<br>convenio de libranza</h2>
+        </div>
+        <hr class="separador">
+        <ul class="checks">
+          <li>Créditos por libranza con tasas preferenciales.</li>
+          <li>Descuento directo por nómina, facilitando el cumplimiento de sus obligaciones sin trámites adicionales.</li>
+          <li>Libranza Virtual, rápida y segura desde cualquier lugar, sin necesidad de desplazamientos, con acompañamiento personalizado.</li>
+          <li>Plazos flexibles y montos ajustados según la capacidad de endeudamiento.</li>
+          <li>Acompañamiento personalizado por la asesora encargada del convenio <span class="gris-texto">Summar Temporales</span> con el Banco Davivienda.</li>
+        </ul>
+      </section>
+
+      <!-- Proceso -->
+      <section class="tarjeta gris">
+        <div class="tarjeta-cab">
+          <div class="icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8.5L19 7v14.5H6z"/><path d="M14.5 2.5V7H19"/><path d="M9 11h7M9 14h7M9 17h7"/></svg>
+          </div>
+          <h2>Proceso y canal<br>autorizado</h2>
+        </div>
+        <hr class="separador">
+        <p>De acuerdo con lo definido entre Banco Davivienda y Summar Temporales S.A.S., con el fin de brindar mayor seguridad, control y tranquilidad en el proceso, se estableció que todas las solicitudes de libranza serán gestionadas únicamente a través de un canal único, a cargo de la asesora Andrea Flor Montenegro, informadora asignada en la oficina Davivienda Chipichape.</p>
+        <p>Para el envío de las solicitudes, deberá utilizarse exclusivamente el código de oferta autorizado, el cual corresponde al siguiente: <strong>1107066535</strong>, siendo este el identificador válido para la recepción y validación de las solicitudes.</p>
+      </section>
+
+      <!-- Requisitos -->
+      <section class="tarjeta">
+        <div class="tarjeta-cab">
+          <div class="icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="14" rx="1.5"/><path d="M10 6V3.5h4V6"/><circle cx="8" cy="11.5" r="2"/><path d="M5 17c.5-1.8 1.6-2.7 3-2.7s2.5.9 3 2.7"/><path d="M14 11h5M14 14h5M14 17h3"/></svg>
+          </div>
+          <h2>Requisitos para<br>el filtro inicial</h2>
+        </div>
+        <hr class="separador">
+        <ul class="puntos">
+          <li>Desprendibles de pago actualizados.</li>
+          <li>Antigüedad laboral mínima de seis (6) meses en la empresa.</li>
+          <li>Información necesaria para la validación del nivel de endeudamiento.</li>
+        </ul>
+        <p class="nota">Una vez validada la información y utilizado correctamente el código de oferta autorizado, las solicitudes que cumplan con los criterios establecidos continuarán con su respectivo trámite.</p>
+      </section>
+
+      <!-- Información -->
+      <section class="tarjeta gris">
+        <div class="tarjeta-cab">
+          <div class="icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8a9.2 9.2 0 0 0-7.9 13.9L3 21l4.4-1.1A9.2 9.2 0 1 0 12 2.8z"/><path d="M9 8.2c.3-.3.8-.3 1 .1l.8 1.7c.1.3 0 .6-.2.8l-.6.6a6 6 0 0 0 2.6 2.6l.6-.6c.2-.2.5-.3.8-.2l1.7.8c.4.2.4.7.1 1-.9.9-2 1.1-3.2.6a9 9 0 0 1-4.2-4.2c-.5-1.2-.3-2.3.6-3.2z"/></svg>
+          </div>
+          <h2>Información y asesoría</h2>
+        </div>
+        <hr class="separador">
+        <p>Para mayor información o para iniciar su solicitud, pueden comunicarse vía WhatsApp al número <strong>310 261 4501</strong> o correo corporativo <strong>leiformo@davivienda.com</strong></p>
+        <div class="contacto-firma">
+          <strong>Andrea Flor Montenegro</strong>
+          Asesora encargada del Convenio Summar Temporales S.A.S.<br>
+          Banco Davivienda – Oficina Chipichape
+        </div>
+      </section>
+
+    </div>
+
+    <div class="banner">
+      <div class="burbuja">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#b3121b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><circle cx="8.5" cy="10.5" r=".6" fill="#b3121b"/><circle cx="12" cy="10.5" r=".6" fill="#b3121b"/><circle cx="15.5" cy="10.5" r=".6" fill="#b3121b"/></svg>
+      </div>
+      <div class="linea"></div>
+      <p>Para mayor información o para iniciar su solicitud,<br>comuníquese vía WhatsApp o correo corporativo</p>
+    </div>
+
+    <p class="cierre">Este convenio busca apoyar su bienestar financiero, ofreciéndoles alternativas prácticas, seguras y confiables para el manejo de sus recursos.</p>
+
+  </div>
+</body>
+</html>
